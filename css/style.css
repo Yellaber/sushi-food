@@ -5,3 +5,37 @@ body {
 }
 
 h1, h2 { font-weight: 700; }
+
+/* Header */
+.lista-menu a { color: #fff; }
+.lista-menu a:hover { color: #ffd17e; }
+
+.boton-ordenar {
+    background: #21243d;
+    border-radius: 100px; 
+    color: #fff;
+    font-weight: 700;
+}
+
+section.fondo-portada {
+    background-image: url("../img/bkg-image-1.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+button.boton-ordenar:hover { color: #ffd17e; }
+.titulo-portada { font-size: 100px; }
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+.navbar-dark {
+    color: #fff !important;
+}
