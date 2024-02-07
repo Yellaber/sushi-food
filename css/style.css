@@ -12,6 +12,7 @@ button:focus { box-shadow: none !important; }
 button.boton-sushi:hover { color: #ffd17e; }
 
 input { 
+    border: none !important;
     border-top-left-radius : 100px !important;
     border-bottom-left-radius: 100px !important;
 }
@@ -124,3 +125,7 @@ input:focus { box-shadow: none !important; }
 }
 
 .bkg-suscribir div { padding: 70px 0; }
+
+/*--- --- Footer --- ---*/
+.bkg-footer { background: #111; }
+.bkg-footer div { padding: 120px 0; }
