@@ -13,23 +13,24 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg shadow">
             <div class="container-fluid px-5 d-lg-flex">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo.png" alt="" height="40">
+                    <img src="./img/logo.png" alt="logo sushi" height="40">
                 </a>
-                <button class="navbar-toggler text-white boton-toggler active" type="button" data-bs-toggle="collapse" 
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button id="boton-menu" class="navbar-toggler text-white boton-toggler" type="button" 
+                        data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+                        aria-controls="navbarNavDropdown" aria-expanded="false" 
+                        aria-label="Toggle navigation">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" 
                         class="bi bi-list" viewBox="0 0 16 16">
                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                   </svg>
+                    </svg>
                 </button>
                 <div class="collapse navbar-collapse justify-content-lg-end lista-menu" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item px-lg-2">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item px-lg-2">
                             <a class="nav-link" href="#">Productos</a>
@@ -59,14 +60,109 @@
             <div class="container-fluid px-5 d-flex">
                 <div class="row justify-content-center justify-content-lg-start align-items-center">
                     <div class="col-12 col-lg-6 text-center text-lg-start">
-                        <h1 class="titulo-portada">Title Here</h1>
+                        <h1 class="titulo-portada">Titulo Aquí</h1>
                         <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsam aut eveniet neque deleniti, recusandae beatae totam voluptate quo sapiente.</p>
-                        <button type="button" class="btn boton-ordenar px-5">ORDER NOW</button>
+                        <button type="button" class="btn boton-sushi px-5 shadow">COMPRAR</button>
                     </div>
                 </div>
             </div>
         </section>
     </header>
+    <main>
+        <div class="container-fluid bkg-popular-menu">
+            <div class="row px-5 text-center">
+                <h2 class="subtitulo">Menú Popular</h2>
+                <p class="px-5 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt ipsum accusamus, placeat reiciendis dolor iure sit delectus, unde tenetur enim sequi optio harum. Ab enim voluptatem repudiandae eum quaerat.</p>
+                <div class="col-12 col-lg-4 px-5 pt-4 pb-0">
+                    <img src="./img/image-1.jpg" alt="" class="rounded-circle shadow" width="200" height="200">
+                    <h3 class="pt-3">Titulo Aquí</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, vitae?</p>
+                </div>
+                <div class="col-12 col-lg-4 px-5 pt-4 pb-0">
+                    <img src="./img/image-2.jpg" alt="" class="rounded-circle shadow" width="200" height="200">
+                    <h3 class="pt-3">Titulo Aquí</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, vitae?</p>
+                </div>
+                <div class="col-12 col-lg-4 px-5 pt-4 pb-0">
+                    <img src="./img/image-3.jpg" alt="" class="rounded-circle shadow" width="200" height="200">
+                    <h3 class="pt-3">Titulo Aquí</h3>
+                    <p class="descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, vitae?</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bkg-promocion-1 text-center text-lg-start">
+            <div class="row px-5 d-lg-flex align-items-lg-center">
+                <div class="col-12 col-lg-5">
+                    <img src="./img/image-4.jpg" alt="" class="rounded-circle shadow" width="400" height="400">
+                </div>
+                <div class="col-12 col-lg-7">
+                    <h2 class="subtitulo texto-oscuro">Titulo Aquí</h2>
+                    <p class="texto-oscuro py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus ex nesciunt error incidunt culpa totam dolore perferendis. Enim eaque recusandae ipsa sapiente molestias temporibus velit eveniet itaque ipsum! Aliquid nesciunt modi ipsa vero, facilis sed ex ducimus exercitationem magnam.</p>
+                    <button type="button" class="btn boton-sushi px-5 shadow">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bkg-estadistica">
+            <div class="row px-5 text-center">
+                <h2 class="subtitulo">Estadisticas</h2>
+                <p class="px-5 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt ipsum accusamus, placeat reiciendis dolor iure sit delectus, unde tenetur enim sequi optio harum. Ab enim voluptatem repudiandae eum quaerat.</p>
+                <div class="col-12 col-lg-4 px-5 py-4 d-flex justify-content-center">
+                    <div class="border border-3 rounded-circle estadistica py-3">
+                        <h3 class="subtitulo">123</h3>
+                        <p class="pb-0">TIENDAS</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 px-5 py-4 d-flex justify-content-center">
+                    <div class="border border-3 rounded-circle estadistica py-3">
+                        <h3 class="subtitulo">100</h3>
+                        <p class="pb-0">MENUS</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 px-5 py-4 d-flex justify-content-center">
+                    <div class="border border-3 rounded-circle estadistica py-3">
+                        <h3 class="subtitulo">200</h3>
+                        <p class="pb-0">CHEFS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bkg-promocion-2 text-center text-lg-start">
+            <div class="row px-5 d-lg-flex align-items-lg-center">
+                <div class="col-12 col-lg-7 order-last order-lg-first">
+                    <h2 class="subtitulo texto-oscuro">Titulo Aquí</h2>
+                    <p class="texto-oscuro py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ducimus ex nesciunt error incidunt culpa totam dolore perferendis. Enim eaque recusandae ipsa sapiente molestias temporibus velit eveniet itaque ipsum! Aliquid nesciunt modi ipsa vero, facilis sed ex ducimus exercitationem magnam.</p>
+                    <button type="button" class="btn boton-sushi px-5 shadow">COMPRAR</button>
+                </div>
+                <div class="col-12 col-lg-5 d-lg-flex justify-content-lg-end order-first order-lg-first">
+                    <img src="./img/image-5.jpg" alt="" class="rounded-circle shadow" width="400" height="400">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bkg-comentario">
+            <div class="row px-5 text-center">
+                <div class="col-12 py-2">
+                    <img src="./img/client-image.jpg" alt="" class="rounded-circle shadow" width="200" 
+                         height="200">
+                    <p class="px-5 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt ipsum accusamus, placeat reiciendis dolor iure sit delectus, unde tenetur enim sequi optio harum. Ab enim voluptatem repudiandae eum quaerat.</p>
+                    <h2>Phoebe Frazier</h2>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bkg-suscribir">
+            <div class="row px-5 text-center d-flex justify-content-center">
+                <h2 class="subtitulo texto-oscuro">Titulo Aquí</h2>
+                <p class="texto-oscuro px-5 py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab incidunt ipsum accusamus, placeat reiciendis dolor iure sit delectus, unde tenetur enim sequi optio harum. Ab enim voluptatem repudiandae eum quaerat.</p>
+                <div class="col-12 col-lg-6 px-5 py-0">
+                    <div class="input-group pt-0">
+                        <input type="email" class="form-control" placeholder="Tu email" aria-label="Tu email" 
+                               aria-describedby="button-addon">
+                        <button class="btn boton-sushi" type="submit" id="button-addon">Suscribir</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/code.js"></script>
 </body>
 </html>
