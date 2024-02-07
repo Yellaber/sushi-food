@@ -4,7 +4,19 @@ body {
     color: #fff;
 }
 
-h1, h2 { font-weight: 700; }
+h1, h2, h3 { font-weight: 700; }
+.subtitulo { font-size: 70px; }
+.texto-oscuro { color: #21243d; }
+
+button:focus { box-shadow: none !important; }
+button.boton-sushi:hover { color: #ffd17e; }
+
+input { 
+    border-top-left-radius : 100px !important;
+    border-bottom-left-radius: 100px !important;
+}
+
+input:focus { box-shadow: none !important; }
 
 /*--- --- Header --- ---*/
 .lista-menu a { color: #fff; }
@@ -13,14 +25,14 @@ h1, h2 { font-weight: 700; }
 .buscar svg:hover { color: #ffd17e; }
 .boton-toggler svg:hover { color: #ffd17e; }
 
-.boton-ordenar {
+.boton-sushi {
     background: #21243d;
     border-radius: 100px; 
     color: #fff;
     font-weight: 700;
 }
 
-section.fondo-portada {
+.fondo-portada {
     background-image: url("../img/bkg-image-1.jpg");
     height: 100vh;
     background-position: center;
@@ -28,8 +40,87 @@ section.fondo-portada {
     background-size: cover;
 }
 
-button:focus { box-shadow: none !important; }
-button.boton-ordenar:hover { color: #ffd17e; }
 .titulo-portada { font-size: 100px; }
 .navbar-toggler { border: none !important; }
 .navbar-toggler:focus { box-shadow: none !important; }
+
+/*--- --- Main --- ---*/
+/*--- --- Menu Popular --- ---*/
+.bkg-popular-menu {
+    background: url("../img/bkg-1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bkg-popular-menu div { padding: 70px 0; }
+.descripcion { font-size: 14px; }
+
+/*--- --- Promoción 1 --- ---*/
+.bkg-promocion-1 {
+    background: url("../img/bkg-2.png") #ffd17e;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bkg-promocion-1 div { padding: 70px 0; }
+
+/*--- --- Estadisticas --- ---*/
+.bkg-estadistica {
+    background: url("../img/bkg-3.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bkg-estadistica div { 
+    padding-top: 70px;
+    padding-bottom: 130px;
+}
+
+.estadistica {
+    width: 200px;
+    height: 200px;
+}
+
+.estadistica p {
+    font-weight: 700px;
+    font-size: 35px;
+}
+
+/*--- --- Promoción 2 --- ---*/
+.bkg-promocion-2 {
+    background: url("../img/bkg-4.png") #ffd17e;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bkg-promocion-2 div { padding: 70px 0; }
+
+/*--- --- Comentario --- ---*/
+.bkg-comentario {
+    background: url("../img/bkg-image-2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bkg-comentario div { padding: 70px 0; }
+.bkg-comentario h2 { font-size: 50px; }
+
+.bkg-comentario p {
+    font-weight: 700px;
+    font-size: 30px;
+}
+
+/*--- --- Suscribir --- ---*/
+.bkg-suscribir {
+    background: url("../img/bkg-5.png") #ffd17e;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bkg-suscribir div { padding: 70px 0; }
