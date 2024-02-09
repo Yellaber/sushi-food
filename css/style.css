@@ -1,30 +1,28 @@
 body {
     background: #21243d;
-    font-family: 'Montserrat', sans-serif;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
 }
-
-h1, h2, h3 { font-weight: 700; }
-.subtitulo { font-size: 70px; }
-.texto-oscuro { color: #21243d; }
-
-button:focus { box-shadow: none !important; }
-button.boton-sushi:hover { color: #ffd17e; }
 
 input { 
     border: none !important;
-    border-top-left-radius : 100px !important;
     border-bottom-left-radius: 100px !important;
+    border-top-left-radius : 100px !important;
 }
 
+h1, h2, h3 { font-weight: 700; }
+button:focus { box-shadow: none !important; }
+button.boton-sushi:hover { color: #ffd17e; }
 input:focus { box-shadow: none !important; }
 
 /*--- --- Header --- ---*/
-.lista-menu a { color: #fff; }
-.lista-menu a:hover { color: #ffd17e; }
-.active { color: #ffd17e !important; }
-.buscar svg:hover { color: #ffd17e; }
-.boton-toggler svg:hover { color: #ffd17e; }
+.fondo-portada {
+    background-image: url("../img/bkg-image-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
 
 .boton-sushi {
     background: #21243d;
@@ -33,17 +31,16 @@ input:focus { box-shadow: none !important; }
     font-weight: 700;
 }
 
-.fondo-portada {
-    background-image: url("../img/bkg-image-1.jpg");
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+.lista-menu a { color: #fff; }
+.lista-menu a:hover { color: #ffd17e; }
+.active { color: #ffd17e !important; }
+.buscar a:hover { color: #ffd17e !important; }
+#boton-menu:hover { color: #ffd17e !important; }
 .titulo-portada { font-size: 100px; }
 .navbar-toggler { border: none !important; }
 .navbar-toggler:focus { box-shadow: none !important; }
+.buscar h5, .buscar .btn svg { color: #21243d; }
+.buscar input { border: 1px solid #21243d !important; }
 
 /*--- --- Main --- ---*/
 /*--- --- Menu Popular --- ---*/
@@ -55,6 +52,7 @@ input:focus { box-shadow: none !important; }
 }
 
 .bkg-popular-menu div { padding: 70px 0; }
+.bkg-popular-menu h2 { font-size: 70px; }
 .descripcion { font-size: 14px; }
 
 /*--- --- Promoción 1 --- ---*/
@@ -66,6 +64,8 @@ input:focus { box-shadow: none !important; }
 }
 
 .bkg-promocion-1 div { padding: 70px 0; }
+.bkg-promocion-1 h2 { font-size: 70px; }
+.bkg-promocion-1 h2, .bkg-promocion-1 p { color: #21243d; }
 
 /*--- --- Estadisticas --- ---*/
 .bkg-estadistica {
@@ -74,6 +74,8 @@ input:focus { box-shadow: none !important; }
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.bkg-estadistica h2, .bkg-estadistica h3 { font-size: 70px; }
 
 .bkg-estadistica div { 
     padding-top: 70px;
@@ -99,6 +101,8 @@ input:focus { box-shadow: none !important; }
 }
 
 .bkg-promocion-2 div { padding: 70px 0; }
+.bkg-promocion-2 h2 { font-size: 70px; }
+.bkg-promocion-2 h2, .bkg-promocion-2 p { color: #21243d; }
 
 /*--- --- Comentario --- ---*/
 .bkg-comentario {
@@ -108,13 +112,13 @@ input:focus { box-shadow: none !important; }
     background-size: cover;
 }
 
-.bkg-comentario div { padding: 70px 0; }
-.bkg-comentario h2 { font-size: 50px; }
-
 .bkg-comentario p {
     font-weight: 700px;
     font-size: 30px;
 }
+
+.bkg-comentario div { padding: 70px 0; }
+.bkg-comentario h2 { font-size: 50px; }
 
 /*--- --- Suscribir --- ---*/
 .bkg-suscribir {
@@ -125,7 +129,88 @@ input:focus { box-shadow: none !important; }
 }
 
 .bkg-suscribir div { padding: 70px 0; }
+.bkg-suscribir h2 { font-size: 70px; }
+.bkg-suscribir h2, .bkg-suscribir p { color: #21243d; }
 
 /*--- --- Footer --- ---*/
+.bkg-footer li a, .bkg-footer span a { 
+    text-decoration: none;
+    color: #fff;
+}
+
 .bkg-footer { background: #111; }
 .bkg-footer div { padding: 120px 0; }
+.bkg-footer h3 { font-weight: 400; }
+.bkg-footer p, .bkg-footer li { font-size: 12px; }
+.bkg-footer li a:hover, .bkg-footer span a:hover { color: #ffd17e; }
+
+/*--- --- Mediaqueries --- ---*/
+/* -- -- Dispositvos xs y sm -- -- 
+  xs => max-width: 575px 
+  sm => min-width: 576px y max-width: 767px
+*/
+@media screen and (max-width: 767px) {
+    .lista-menu ul li, .buscar input, .buscar button, .fondo-portada p, .fondo-portada button, 
+    .bkg-popular-menu p, .bkg-promocion-1 p, .bkg-promocion-1 button, .bkg-estadistica p, 
+    .bkg-promocion-2 p, .bkg-promocion-2 button, .bkg-suscribir p, .bkg-suscribir input, 
+    .bkg-suscribir button { font-size: 14px; }
+
+    .titulo-portada, .bkg-popular-menu h2, .bkg-promocion-1 h2, .bkg-estadistica h2, 
+    .bkg-estadistica h3, .bkg-promocion-2 h2, .bkg-suscribir h2 { font-size: 40px; }
+    .bkg-comentario p { font-size: 16px; }
+    .bkg-comentario h2 { font-size: 30px; }
+    .buscar h5 { font-size: 16px; }
+    
+    .bkg-popular-menu img, .estadistica, .bkg-comentario img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .bkg-promocion-1 img, .bkg-promocion-2 img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .estadistica p {
+        font-weight: 700px;
+        font-size: 25px;
+    }
+}
+
+/* -- -- Dispositvos md -- -- */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .lista-menu ul li, .buscar input, .buscar button, .fondo-portada p, .fondo-portada button, 
+    .bkg-popular-menu p, .bkg-promocion-1 p, .bkg-promocion-1 button, .bkg-estadistica p, 
+    .bkg-promocion-2 p, .bkg-promocion-2 button, .bkg-suscribir p, .bkg-suscribir input, 
+    .bkg-suscribir button { font-size: 15px; }
+
+    .titulo-portada, .bkg-popular-menu h2, .bkg-promocion-1 h2, .bkg-estadistica h2, 
+    .bkg-estadistica h3, .bkg-promocion-2 h2, .bkg-suscribir h2 { font-size: 50px; }
+    .bkg-comentario p { font-size: 18px; }
+    .bkg-comentario h2 { font-size: 40px; }
+    .buscar h5 { font-size: 18px; }
+
+    .bkg-popular-menu img, .estadistica, .bkg-comentario img {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .bkg-promocion-1 img, .bkg-promocion-2 img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .estadistica p {
+        font-weight: 700px;
+        font-size: 30px;
+    }
+}
+
+/* -- -- Dispositvos lg -- -- */
+@media screen and (min-width: 992px) and (max-width: 1199px) { }
+
+/* -- -- Dispositvos xl -- -- */
+@media screen and (min-width: 1200px) and (max-width: 1399px) { }
+
+/* -- -- Dispositvos xxl -- -- */
+@media screen and (min-width: 1400px) { }
