@@ -1,6 +1,8 @@
 
 /* Activa la opción del menú que ha sido seleccionada */
 const listaOpciones = document.querySelectorAll('div ul li a');
+const opcionInicio = listaOpciones.item(0);
+opcionInicio.classList.add('active');
 listaOpciones.forEach(( opcion ) => {
     opcion.addEventListener('click', ( event ) => {
         listaOpciones.forEach(( opcion ) => {
@@ -12,7 +14,7 @@ listaOpciones.forEach(( opcion ) => {
 
 /* Cambia el icono del botón toggler para el menú responsivo*/
 const botonMenu = document.getElementById('boton-menu');
-botonMenu.addEventListener('click', ( event ) => {
+botonMenu.addEventListener('click', () => {
     const contenidoBotonMenu = botonMenu.innerHTML.trim();
     if( contenidoBotonMenu.includes('bi-list') ) {
         botonMenu.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
