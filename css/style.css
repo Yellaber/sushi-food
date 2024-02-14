@@ -44,105 +44,105 @@ input:focus { box-shadow: none !important; }
 
 /*--- --- Main --- ---*/
 /*--- --- Menu Popular --- ---*/
-.bkg-popular-menu {
+.popular-menu {
     background: url("../img/bkg-1.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 70px 0;
 }
 
-.bkg-popular-menu div { padding: 70px 0; }
-.bkg-popular-menu h2 { font-size: 70px; }
+.popular-menu h2 { font-size: 70px; }
 .descripcion { font-size: 14px; }
 
 /*--- --- Promoción 1 --- ---*/
-.bkg-promocion-1 {
+.promocion-1 {
     background: url("../img/bkg-2.png") #ffd17e;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 70px 0;
 }
 
-.bkg-promocion-1 div { padding: 70px 0; }
-.bkg-promocion-1 h2 { font-size: 70px; }
-.bkg-promocion-1 h2, .bkg-promocion-1 p { color: #21243d; }
+.promocion-1 h2 { font-size: 70px; }
+.promocion-1 h2, .promocion-1 p { color: #21243d; }
 
 /*--- --- Estadisticas --- ---*/
-.bkg-estadistica {
+.estadistica {
     background: url("../img/bkg-3.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.bkg-estadistica h2, .bkg-estadistica h3 { font-size: 70px; }
-
-.bkg-estadistica div { 
-    padding-top: 70px;
     padding-bottom: 130px;
+    padding-top: 70px;
 }
 
-.estadistica {
+.estadistica h2, .estadistica h3 { font-size: 70px; }
+
+.circulo {
     width: 200px;
     height: 200px;
 }
 
-.estadistica p {
+.circulo p {
     font-weight: 700px;
     font-size: 35px;
 }
 
 /*--- --- Promoción 2 --- ---*/
-.bkg-promocion-2 {
+.promocion-2 {
     background: url("../img/bkg-4.png") #ffd17e;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 70px 0;
 }
 
-.bkg-promocion-2 div { padding: 70px 0; }
-.bkg-promocion-2 h2 { font-size: 70px; }
-.bkg-promocion-2 h2, .bkg-promocion-2 p { color: #21243d; }
+.promocion-2 h2 { font-size: 70px; }
+.promocion-2 h2, .promocion-2 p { color: #21243d; }
 
 /*--- --- Comentario --- ---*/
-.bkg-comentario {
+.comentario {
     background: url("../img/bkg-image-2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 70px 0;
 }
 
-.bkg-comentario p {
+.comentario p {
     font-weight: 700px;
     font-size: 30px;
 }
 
-.bkg-comentario div { padding: 70px 0; }
-.bkg-comentario h2 { font-size: 50px; }
+.comentario h2 { font-size: 50px; }
 
 /*--- --- Suscribir --- ---*/
-.bkg-suscribir {
+.suscribir {
     background: url("../img/bkg-5.png") #ffd17e;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 70px 0;
 }
 
-.bkg-suscribir div { padding: 70px 0; }
-.bkg-suscribir h2 { font-size: 70px; }
-.bkg-suscribir h2, .bkg-suscribir p { color: #21243d; }
+.suscribir h2 { font-size: 70px; }
+.suscribir h2, .suscribir p { color: #21243d; }
 
 /*--- --- Footer --- ---*/
-.bkg-footer li a, .bkg-footer span a { 
+footer li a, footer span a { 
     text-decoration: none;
     color: #fff;
 }
 
-.bkg-footer { background: #111; }
-.bkg-footer div { padding: 120px 0; }
-.bkg-footer h3 { font-weight: 400; }
-.bkg-footer p, .bkg-footer li { font-size: 12px; }
-.bkg-footer li a:hover, .bkg-footer span a:hover { color: #ffd17e; }
+footer { 
+    background: #000;
+    padding: 120px 0;
+}
+
+footer h3 { font-weight: 400; }
+footer p, footer li { font-size: 12px; }
+footer li a:hover, footer span a:hover { color: #ffd17e; }
 
 /*--- --- Mediaqueries --- ---*/
 /* -- -- Dispositvos xs y sm -- -- 
@@ -151,27 +151,26 @@ input:focus { box-shadow: none !important; }
 */
 @media screen and (max-width: 767px) {
     .lista-menu ul li, .buscar input, .buscar button, .fondo-portada p, .fondo-portada button, 
-    .bkg-popular-menu p, .bkg-promocion-1 p, .bkg-promocion-1 button, .bkg-estadistica p, 
-    .bkg-promocion-2 p, .bkg-promocion-2 button, .bkg-suscribir p, .bkg-suscribir input, 
-    .bkg-suscribir button { font-size: 14px; }
+    .popular-menu p, .promocion-1 p, .promocion-1 button, .estadistica p, .promocion-2 p, 
+    .promocion-2 button, .suscribir p, .suscribir input, .suscribir button { font-size: 14px; }
 
-    .titulo-portada, .bkg-popular-menu h2, .bkg-promocion-1 h2, .bkg-estadistica h2, 
-    .bkg-estadistica h3, .bkg-promocion-2 h2, .bkg-suscribir h2 { font-size: 40px; }
-    .bkg-comentario p { font-size: 16px; }
-    .bkg-comentario h2 { font-size: 30px; }
+    .titulo-portada, .popular-menu h2, .promocion-1 h2, .estadistica h2, .estadistica h3, 
+    .promocion-2 h2, .suscribir h2 { font-size: 40px; }
+    .comentario p { font-size: 16px; }
+    .comentario h2 { font-size: 30px; }
     .buscar h5 { font-size: 16px; }
     
-    .bkg-popular-menu img, .estadistica, .bkg-comentario img {
+    .popular-menu img, .circulo, .comentario img {
         width: 150px;
         height: 150px;
     }
 
-    .bkg-promocion-1 img, .bkg-promocion-2 img {
+    .promocion-1 img, .promocion-2 img {
         width: 250px;
         height: 250px;
     }
 
-    .estadistica p {
+    .circulo p {
         font-weight: 700px;
         font-size: 25px;
     }
@@ -180,27 +179,26 @@ input:focus { box-shadow: none !important; }
 /* -- -- Dispositvos md -- -- */
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .lista-menu ul li, .buscar input, .buscar button, .fondo-portada p, .fondo-portada button, 
-    .bkg-popular-menu p, .bkg-promocion-1 p, .bkg-promocion-1 button, .bkg-estadistica p, 
-    .bkg-promocion-2 p, .bkg-promocion-2 button, .bkg-suscribir p, .bkg-suscribir input, 
-    .bkg-suscribir button { font-size: 15px; }
+    .popular-menu p, .promocion-1 p, .promocion-1 button, .estadistica p, .promocion-2 p, 
+    .promocion-2 button, .suscribir p, .suscribir input, .suscribir button { font-size: 15px; }
 
-    .titulo-portada, .bkg-popular-menu h2, .bkg-promocion-1 h2, .bkg-estadistica h2, 
-    .bkg-estadistica h3, .bkg-promocion-2 h2, .bkg-suscribir h2 { font-size: 50px; }
-    .bkg-comentario p { font-size: 18px; }
-    .bkg-comentario h2 { font-size: 40px; }
+    .titulo-portada, .popular-menu h2, .promocion-1 h2, .estadistica h2, .estadistica h3, 
+    .promocion-2 h2, .suscribir h2 { font-size: 50px; }
+    .comentario p { font-size: 18px; }
+    .comentario h2 { font-size: 40px; }
     .buscar h5 { font-size: 18px; }
 
-    .bkg-popular-menu img, .estadistica, .bkg-comentario img {
+    .popular-menu img, .circulo, .comentario img {
         width: 170px;
         height: 170px;
     }
     
-    .bkg-promocion-1 img, .bkg-promocion-2 img {
+    .promocion-1 img, .promocion-2 img {
         width: 300px;
         height: 300px;
     }
 
-    .estadistica p {
+    .circulo p {
         font-weight: 700px;
         font-size: 30px;
     }
