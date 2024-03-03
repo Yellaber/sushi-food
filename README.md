@@ -1,2 +1,2 @@
 # Sushi-food
-Plantilla de la página de inicio del sitio. Desarrollada con `HTML5`, `CSS3`, `JS` y `Bootstrap 5`.
+Plantilla responsiva para la página de inicio del sitio. Desarrollada con `HTML5`, `CSS3`, `JavaScript` y `Bootstrap 5`.
